@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div class="sub-container" id="heightBox">
+            <span class="text">Height</span>
+            <span class="spans" id="heightValue"> 167 cm / 5' 6"</span>
+            <input class="inputs" value="167" type="range" min="122" max="214" id="height">
+        </div>
+        <div class="sub-container" id="weightBox"> 
+            <span class="text">Weight</span>
+            <span class="spans" id="weightValue">52 kg / 114.64 lb</span>
+            <input class="inputs" value="52" type="range" min="20" max="150" id="weight">
+        </div>
+        <div class="sub-container" id='outputBox'>
+            <div id="bmi">Your BMI Is: <span id="result">18.65</span></div>
+            <div id="scale">
+                <div class="boxes" id="underweight">Underweight</div>
+                <div class="boxes" id="normal">Normal</div>
+                <div class="boxes" id="overweight">Overweight</div>
+                <div class="boxes" id="obese1">Obese I</div>
+                <div class="boxes" id="obese2">Obese II</div>
+                <div class="boxes" id="obese3">Obese III</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
